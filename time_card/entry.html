@@ -34,7 +34,9 @@
     </header>
     <div css="main">
         <section>
-            <button id="kintai" type="button" class="btn btn-default btn-lg in">出勤 <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
+            <div class="container">
+                <button id="kintai" type="button" class="btn btn-primary btn-lg in">出勤 <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
+            </div>
         </section>
     </div>
     <footer>
@@ -51,7 +53,8 @@
                 $(this).append('<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>');
                 $(this).removeClass('in');
                 $(this).addClass('out');
-            }　else {
+            }　
+            else {
                 alert('hh:mm 退勤を確認しました。');
                 $(this).text('出勤 ');
                 $(this).append('<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>');
